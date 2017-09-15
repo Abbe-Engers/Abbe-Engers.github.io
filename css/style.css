@@ -1,0 +1,164 @@
+html {
+  overflow-y: scroll;
+}
+
+body {
+  font-family: "Lato";
+  background: #e2e1e0;
+  text-align: center;
+  overflow-y: hidden;
+}
+
+button {
+  position: relative;
+  display: inline-block;
+  padding: 1.2em 2em;
+  border: none;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  color: white;
+}
+
+button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: -webkit-linear-gradient(315deg, #ff3535, #ff3535);
+  background: linear-gradient(135deg, #ff3535, #404040);
+  border-radius: 4px;
+  -webkit-transition: box-shadow .5s ease, -webkit-transform .2s ease;
+  transition: box-shadow .5s ease, -webkit-transform .2s ease;
+  transition: box-shadow .5s ease, transform .2s ease;
+  transition: box-shadow .5s ease, transform .2s ease, -webkit-transform .2s ease;
+  will-change: transform;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  -webkit-transform: translateY(var(--ty, 0)) rotateX(var(--rx, 0)) rotateY(var(--ry, 0)) translateZ(var(--tz, -12px));
+          transform: translateY(var(--ty, 0)) rotateX(var(--rx, 0)) rotateY(var(--ry, 0)) translateZ(var(--tz, -12px));
+}
+
+button:hover::before {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+button::after {
+  position: relative;
+  display: inline-block;
+  content: attr(data-title);
+  -webkit-transition: -webkit-transform .2s ease;
+  transition: -webkit-transform .2s ease;
+  transition: transform .2s ease;
+  transition: transform .2s ease, -webkit-transform .2s ease;
+  font-weight: bold;
+  letter-spacing: .01em;
+  will-change: transform;
+  -webkit-transform: translateY(var(--ty, 0)) rotateX(var(--rx, 0)) rotateY(var(--ry, 0));
+          transform: translateY(var(--ty, 0)) rotateX(var(--rx, 0)) rotateY(var(--ry, 0));
+}
+
+.button {
+  margin-top: 12%;
+  margin-bottom: 12%;
+  font-family: "Lato";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: perspective(800px);
+          transform: perspective(800px);
+}
+
+.header {
+  text-align: center;
+  margin-top: 4%;
+  color: #000000;
+}
+
+.aankondeging {
+  color: #808080;
+}
+
+.welkom {
+  #
+}
+
+.tekstvak {
+  text-align: center;
+  margin-top: 11%;
+  font-size: 200%;
+}
+
+.kaart {
+  background: #fff;
+  border-radius: 1%;
+  display: inline-table;
+  height: 500px;
+  margin: 1rem;
+  position: relative;
+  width: 25%;
+  margin-bottom: 5%;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  font-size: 80%;
+  text-align: left;
+}
+
+.kaart:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+h2 {
+  text-align: center;
+}
+
+p {
+  margin-left: 8%;
+}
+
+.link {
+  font-size: 200%;
+  text-decoration: none;
+  margin-left: 8%;
+  color: #7a7a7a
+}
+
+.link:visited {
+    color: #7a7a7a;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: #ff5050;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.link:active {
+    color: #050505;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.Copy-bar {
+  position: relative;
+  z-index: 100;
+  width: 100%;
+  text-align: center;
+  font-size: 60%;
+}
