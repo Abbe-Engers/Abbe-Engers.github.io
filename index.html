@@ -1,82 +1,106 @@
 <!DOCTYPE html>
-<html>
+<html lang="nl">
   <head>
+    <!-- the fonts from google-->
     <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:700" rel="stylesheet">
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Title -->
     <title>Æ Website</title>
-    <link rel="stylesheet" href="css/style.css">
+    <!-- Connect CSS -->
     <link rel="stylesheet" href="css/animate.css">
-
+    <link rel="stylesheet" href="css/style.css">
   </head>
+
   <body>
-
-    <div class="header wow fadeInDown">
-      	<h1 class="welkom">Welkom!</h1>
-        <h2 class="aankondeging">Op de website van Abbe.</h2>
-    </div>
-
-    <div class="tekstvak wow fadeInDown animated" data-wow-delay="0.1s" >
-      <p>Hallo, mijn naam is Abbe en ik zit in de Coderclass,<br> Metis Montessori Lyceum.
-      Verder kun je nog véél meer informatie<br> over mij vinden in mijn portfolio.</p>
-    </div>
-
-    <div class="button wow fadeInDown animated">
-
-        <button type="button" onclick="window.open('#kaart', '_self')" data-title="verder&nbsp&nbsp&nbsp→"></button>
-    </div>
-
-    <div class="kaart wow zoomIn" id="kaart">
-      <h2>Programming</h2><br>
-      <p>Ik zit in een profielklas waar je leert programmeren.<br>
-        Ik krijg elke week 5 uur programmeer-les.<br>
-        Dan kan je denken aan een animatie of website.<br>
-        Ook hebben leren we bijna elke week een andere programmeertaal.
-        dan kan je denken aan: Python, Html-Css, Javascript en Blender.
-        Ik heb al vele dingen geprogrammeerd,
-        maar niet echt dingen uit mezelf meestal wel als opdracht.<br>
-        Programmeren op school is eigenlijk heel leuk en aardig maar ook heel handig later aangezien alles<br>nu om de ICT draait.
-        <br>Vind je heel snel een goede baan.<br>
-        Daarom word coderen ook steeds belangrijker.</p><br>
-        <a class="link" href="https://coderclass.nl" target="_blank">- Coderclass Website</a><br><br>
-        <a class="link" href="http://hetmml.nl/" target="_blank">- Metis Website</a><br>
-    </div>
-    <div class="kaart wow zoomIn">
-      <h2>Hobby</h2><br>
-      <p>-atletiek<br><br>-projects<br><br>-sports<br><br>-school</p>
-    </div>
-    <div class="kaart wow zoomIn">
-      <h2>Projects</h2><br>
-      <p>ik heb vele dingen gemaakt of geprogrammeerd van lego bouwwerken tot complete robots. <br>
-         Daar ga ik nu meer over vertellen.<br>
-         ik heb een tijd geleden een ESP8266 gekocht. <br>
-         Daarmee kon je er voor zorgen dat je geen signalen meer krijgt van een bepaald wifi netwerk. <br>
-         Ik heb hem laatst nog mobiel gemaakt doormiddel van een batterij.
-         <br>
-         Verder ben ik nu bezig met een website.<br> Toevallig is het de website die u nu bezoekt.<br> Hier ben ik al best wel lang mee bezig. <br>Ik hoop dat hij een beetje duidelijk is geworden.
-         <br>
-          Ik heb eens in het jaar een First Lego League wedstrijd gedaan dan moet je een lego EV3 robot bouwen die op een tafel bepaalde lego blokjes draaien of er over heen rijden.
+    <div class="scrolldiv"><div>
+    <div id="Pagina1">
+      <!-- Greeting -->
+      <div class="header wow fadeInDown">
+        	<h1 class="welkom">Welkom!</h1>
+          <h2 class="aankondeging">Op de website van Abbe.</h2>
+      </div>
+      <!-- Introduction -->
+      <div class="tekstvak wow fadeInDown animated" data-wow-delay="0.1s" >
+        <p>Hallo, mijn naam is Abbe en ik zit in de Coderclass,<br>
+          Metis Montessori Lyceum.
+          Verder kun je nog véél meer informatie<br>
+          over mij vinden in mijn portfolio.
         </p>
-        <br>
-        <a class="link" href="https://en.wikipedia.org/wiki/ESP8266" target="_blank">- ESP8266</a><br><br>
-        <a class="link" href="http://firstlegoleague.nl/" target="_blank">- FLL Website</a>
+      </div>
+      <!-- Scroll-Button -->
+      <div class="button wow fadeInDown animated">
+          <button type="button" onclick="window.open('#kaart', '_self')" data-title="verder&nbsp&nbsp&nbsp→"></button>
+      </div>
     </div>
 
-    <div class="Copy-bar">© Copyright Æ 2017-2019. Alle rechten voorbehouden.</div>
-
-    <div id="menu">
-      <!--<button id="enable">enable scrolling</button>
-      <button id="disable">disable scrolling</button> --> 
-      <strong id="status" class="enabled"></strong>
+    <div id="Pagina2">
+      <!-- Scroll end location -->
+      <div class="kaart-anker" id="kaart">_</div>
+      <!-- Programming tab -->
+      <div class="kaart wow zoomIn">
+        <h2>Programming</h2><br>
+        <p>Ik zit in een profielklas waar je leert programmeren.<br>
+          Ik krijg elke week 5 uur programmeer-les.<br>
+          Dan kan je denken aan een animatie of website.<br>
+          Ook hebben leren we bijna elke week een andere programmeertaal.
+          dan kan je denken aan: Python, Html-Css, Javascript en Blender.
+          Ik heb al vele dingen geprogrammeerd,
+          maar niet echt dingen uit mezelf meestal wel als opdracht.<br>
+          Programmeren op school is eigenlijk heel leuk en aardig maar ook heel handig later aangezien alles<br>nu om de ICT draait.
+          <br>Vind je heel snel een goede baan.<br>
+          Daarom word coderen ook steeds belangrijker.</p><br>
+          <a class="link" href="https://coderclass.nl" target="_blank">- Coderclass Website</a><br><br>
+          <a class="link" href="http://hetmml.nl/" target="_blank">- Metis Website</a><br>
+      </div>
+      <!-- Hobby tab -->
+      <div class="kaart wow zoomIn">
+        <h2>Hobby</h2><br>
+        <p>-atletiek<br><br>-projects<br><br>-sports<br><br>-school</p>
+      </div>
+      <!-- Projects tab -->
+      <div class="kaart wow zoomIn">
+        <h2>Projects</h2><br>
+        <p>ik heb vele dingen gemaakt of geprogrammeerd van lego bouwwerken tot complete robots. <br>
+           Daar ga ik nu meer over vertellen.<br>
+           ik heb een tijd geleden een ESP8266 gekocht. <br>
+           Daarmee kon je er voor zorgen dat je geen signalen meer krijgt van een bepaald wifi netwerk. <br>
+           Ik heb hem laatst nog mobiel gemaakt doormiddel van een batterij.
+           <br>
+           Verder ben ik nu bezig met een website.<br> Toevallig is het de website die u nu bezoekt.<br> Hier ben ik al best wel lang mee bezig. <br>Ik hoop dat hij een beetje duidelijk is geworden.
+           <br>
+            Ik heb eens in het jaar een First Lego League wedstrijd gedaan dan moet je een lego EV3 robot bouwen die op een tafel bepaalde lego blokjes draaien of er over heen rijden.
+          </p>
+          <br>
+          <a class="link" href="https://en.wikipedia.org/wiki/ESP8266" target="_blank">- ESP8266</a><br><br>
+          <a class="link" href="http://firstlegoleague.nl/" target="_blank">- FLL Website</a>
+      </div>
+      <!-- scroll button -->
+      <br><button type="button" onclick="window.open('#kaart-2', '_self')" data-title="bekijk badges&nbsp&nbsp&nbsp→"></button><br>
     </div>
 
+    <div id="Pagina3">
+      <!-- Badge-List -->
+      <div class="badge-list wow zoomIn"><script data-type="user" data-id="2246734" async="" defer="" src="https://beta.credly.noahloomans.com/credly-widget.js"></script></div>
+      <!-- Back-to-top button -->
+      <div class="terug-button"><br><button type="button" onclick="window.open('#kaart', '_self')" data-title="terug&nbsp&nbsp&nbsp→"></button></div>
+      <!-- Copyright-bar / scroll end location-->
+      <div class="Copy-bar" id="kaart-2"></div>
+    </div>
+
+    <!-- Connect Javascript -->
     <script src="js/code.js"></script>
     <script src="js/wow.min.js"></script>
 
+    <!-- Play animation when scrolling -->
     <script>
       new WOW().init();
     </script>
-
+    <!-- Ending evrything -->
   </body>
 </html>
+
+
+
+
+<!-- made by Abbe-engers © Copyright Æ 2017-2019. Alle rechten voorbehouden. -->
