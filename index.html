@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="nl" id="html">
   <head>
     <!-- the fonts from google-->
     <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
@@ -17,12 +17,14 @@
     <div id="Pagina1">
       <!-- Greeting -->
       <div class="header wow fadeInDown">
-        	<h1 class="welkom">Welkom!</h1>
-          <h2 class="aankondeging">Op de website van Abbe.</h2>
+          <img src="moon sun.png" onclick="changeStyle()" id="image">
+
+        	<h1 class="welkom" id="welkom">Welkom!</h1>
+          <h2 class="aankondeging" id="opAbbe">Op de website van Abbe.</h2>
       </div>
       <!-- Introduction -->
       <div class="tekstvak wow fadeInDown animated" data-wow-delay="0.1s" >
-        <p>Hallo, mijn naam is Abbe en ik zit in de Coderclass,<br>
+        <p id="introtekst">Hallo, mijn naam is Abbe en ik zit in de Coderclass,<br>
           Metis Montessori Lyceum.
           Verder kun je nog véél meer informatie<br>
           over mij vinden in mijn portfolio.
@@ -30,7 +32,7 @@
       </div>
       <!-- Scroll-Button -->
       <div class="button wow fadeInDown animated">
-          <button type="button" onclick="window.open('#kaart', '_self')" data-title="verder&nbsp&nbsp&nbsp→"></button>
+          <button type="button" onclick="Verder()" id="verderButton" data-title="verder&nbsp&nbsp&nbsp→"></button>
       </div>
     </div>
 
@@ -39,7 +41,7 @@
       <div class="kaart-anker" id="kaart">_</div>
       <!-- Programming tab -->
       <div class="kaart wow zoomIn">
-        <h2>Programming</h2><br>
+        <h2 id="programming">Programming</h2><br>
         <p>Ik zit in een profielklas waar je leert programmeren.<br>
           Ik krijg elke week 5 uur programmeer-les.<br>
           Dan kan je denken aan een animatie of website.<br>
@@ -55,7 +57,7 @@
       </div>
       <!-- Hobby tab -->
       <div class="kaart wow zoomIn">
-        <h2>Hobby</h2><br>
+        <h2 id="hobby">Hobby</h2><br>
         <p>1 van mijn vele hobby's is atletieken, de sport is echt fantastisch en je leert er echt veel.
           ik word supergoed getrained door mijn trainers tot in de uiterste perfectie.
           ik zit er nu al 7 jaar op en nog nooit gedacht het te verlaten.<br><br>
@@ -67,7 +69,7 @@
       </div>
       <!-- Projects tab -->
       <div class="kaart wow zoomIn">
-        <h2>Projects</h2><br>
+        <h2 id="project">Projects</h2><br>
         <p>ik heb vele dingen gemaakt of geprogrammeerd van lego bouwwerken tot complete robots. <br>
            Daar ga ik nu meer over vertellen.<br>
            ik heb een tijd geleden een ESP8266 gekocht. <br>
@@ -83,14 +85,14 @@
           <a class="link" href="http://firstlegoleague.nl/" target="_blank">- FLL Website</a>
       </div>
       <!-- scroll button -->
-      <br><button type="button" onclick="window.open('#kaart-2', '_self')" data-title="bekijk badges&nbsp&nbsp&nbsp→"></button><br>
+      <br><button type="button" onclick="Badges()" data-title="bekijk badges&nbsp&nbsp&nbsp→" id="bekijkBadge"></button><br>
     </div>
 
     <div id="Pagina3">
       <!-- Badge-List -->
-      <div class="badge-list wow zoomIn"><script data-type="user" data-id="2246734" async="" defer="" src="https://beta.credly.noahloomans.com/credly-widget.js"></script></div>
+      <div class="badge-list wow zoomIn" id="badgesList"><script data-type="user" data-id="2246734" async="" defer="" src="https://beta.credly.noahloomans.com/credly-widget.js"></script></div>
       <!-- Back-to-top button -->
-      <div class="terug-button"><br><button type="button" onclick="window.open('#kaart', '_self')" data-title="terug&nbsp&nbsp&nbsp→"></button></div>
+      <div class="terug-button"><br><button type="button" onclick="Verder()" data-title="terug&nbsp&nbsp&nbsp→" id="terugButton"></button></div>
       <!-- Copyright-bar / scroll end location-->
       <div class="Copy-bar" id="kaart-2"></div>
     </div>

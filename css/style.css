@@ -7,7 +7,15 @@ html {
    -khtml-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
-            cursor: pointer;
+            cursor: default;
+}
+
+img {
+  height: 5%;
+  width: 5%;
+  margin-left: 80%;
+  margin-top: 0%;
+  position: relative;
 }
 
 body::-webkit-scrollbar {
@@ -135,6 +143,7 @@ button::after {
 
 .kaart:hover {
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  height: 720px;
 }
 
 h2 {
@@ -143,6 +152,8 @@ h2 {
 
 p {
   margin-left: 8%;
+  margin-right: 8%;
+  color: black;
 }
 
 .link {
@@ -179,10 +190,11 @@ p {
 }
 
 .badge-list {
+  color: black;
   background: #fff;
   border-radius: 1%;
   display: inline-table;
-  height: 50%;
+  height: 40%;
   margin: 1rem;
   position: relative;
   width: 80%;
@@ -222,4 +234,8 @@ p {
 
 .terug-button {
   margin-bottom: 2%;
+}
+
+p.stylechange {
+
 }
