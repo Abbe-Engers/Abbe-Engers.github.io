@@ -7,11 +7,10 @@ var welkom = document.getElementById("welkom");
 var verderButton = document.getElementById("verderButton");
 var Abbe = document.getElementById("opAbbe");
 var image = document.getElementById("image");
-var Badge = document.getElementById("bekijkBadge");
 var programTekst = document.getElementById("programming");
 var hobbyTekst = document.getElementById("hobby");
 var projectTekst = document.getElementById("project");
-var badgesList = document.getElementById("badgesList");
+var badgesList = document.getElementsByClassName("badge");
 var terug = document.getElementById("terugButton");
 
 function Verder() {
@@ -36,6 +35,11 @@ function check() {
   }
 }
 
+function redirect() {
+if (screen.width <= 800) {
+   window.location = "https://www.google.com/";
+}
+
 function changeStyle() {
   if (changeStylenum == true) {
     changeStylenum = false;
@@ -46,14 +50,13 @@ function changeStyle() {
     introtekst.style.color = "black";
     welkom.style.color = "black";
     verderButton.style.background = "#e2e1e0";
-    Badge.style.background = "#e2e1e0";
     terugButton.style.background = "#e2e1e0";
     Abbe.style.color = "#808080";
     image.src = "moon sun.png";
     programTekst.style.color = "#808080";
     hobbyTekst.style.color = "#808080";
     projectTekst.style.color = "#808080";
-    badgesList.style.color = black;
+    badgesList.style.color = "#ff4545";
   }
 
   else if (changeStylenum == false) {
@@ -65,7 +68,6 @@ function changeStyle() {
     introtekst.style.color = "white";
     welkom.style.color = "white";
     verderButton.style.background = "#212121";
-    Badge.style.background = "#212121";
     terugButton.style.background = "#212121";
     Abbe.style.color = "#ff4545";
     image.src = "moon sun - red.png";

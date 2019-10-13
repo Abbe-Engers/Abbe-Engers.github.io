@@ -18,6 +18,10 @@ img {
   position: relative;
 }
 
+body {
+  min-width: 800px
+}
+
 body::-webkit-scrollbar {
     width: 0.5%;
     padding: 2%;
@@ -126,15 +130,19 @@ button::after {
   font-size: 200%;
 }
 
+#wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .kaart {
   background: #fff;
-  border-radius: 1%;
   display: inline-table;
-  height: 700px;
-  margin: 1rem;
+  height: 80vh;
+  margin: 7.5px;
   position: relative;
-  width: 25%;
-  margin-bottom: 3%;
+  flex: 1 0 10%;
+  width: 80vw;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
   font-size: 100%;
@@ -143,7 +151,7 @@ button::after {
 
 .kaart:hover {
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-  height: 720px;
+  height: 80vh;
 }
 
 h2 {
@@ -189,39 +197,49 @@ p {
   font-size: 60%;
 }
 
-.badge-list {
-  color: black;
-  background: #fff;
-  border-radius: 1%;
-  display: inline-table;
-  margin: 1rem;
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  height: 250vh;
+  width: 80vw;
+  flex-grow: 1;
+  padding: 7.5px;
+  margin: 0 auto;
+  transform: translate(0, 0);
+}
+
+.img {
+  height: 150px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin-bottom: 30px;
+}
+
+.badge:hover {
+  flex: 1 0 15%;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.badge {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  flex: 1 0 15%;
+  margin: 7.5px;
+  height: auto;
+  width: auto;
+  padding: 15px;
+  background-color: #FFF;
+  overflow: hidden;
   position: relative;
-  width: 40%;
-  margin-bottom: none;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-  font-size: 80%;
-  text-align: left;
-  margin-top: 15%;
 }
 
-.credly__user {
-  font-size: 6px;
+#bekijkBadge {
+  margin-bottom: 40px;
 }
 
-.credly__user > div > div {
-  background-color: black !important;
+#Pagina3 {
+  height: 250vh;
 }
-
-.credly__user a {
-   width: 140px !important;
-   height: 182.3px !important;
-}
-
-.credly__user a img {
-   width: 800px !important;
-   height: 800px !important;
- }
 
 .kaart-anker {
   color: #e2e1e0;
@@ -230,8 +248,4 @@ p {
 
 .terug-button {
   margin-bottom: 2%;
-}
-
-p.stylechange {
-
 }
