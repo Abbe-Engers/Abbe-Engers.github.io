@@ -10,7 +10,6 @@ var image = document.getElementById("image");
 var programTekst = document.getElementById("programming");
 var hobbyTekst = document.getElementById("hobby");
 var projectTekst = document.getElementById("project");
-var badgesList = document.getElementsByClassName("badge");
 var terug = document.getElementById("terugButton");
 
 function Verder() {
@@ -36,8 +35,9 @@ function check() {
 }
 
 function redirect() {
-if (screen.width <= 800) {
-   window.location = "https://www.google.com/";
+  if (screen.width <= 800) {
+     window.location = "https://www.google.com/";
+  }
 }
 
 function changeStyle() {
@@ -56,7 +56,6 @@ function changeStyle() {
     programTekst.style.color = "#808080";
     hobbyTekst.style.color = "#808080";
     projectTekst.style.color = "#808080";
-    badgesList.style.color = "#ff4545";
   }
 
   else if (changeStylenum == false) {
@@ -74,7 +73,6 @@ function changeStyle() {
     programTekst.style.color = "#ff4545";
     hobbyTekst.style.color = "#ff4545";
     projectTekst.style.color = "#ff4545";
-    badgesList.style.background = "#ff4545";
   }
 }
 
